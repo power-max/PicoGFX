@@ -8,4 +8,9 @@ The port required also porting the Adafruit_GFX library. The port is not perfect
 * only I2C working at the moment (I don't have an SPI screen to test)
 * only SSD1306
 
+## To build this project:
 
+* enter the build folder
+* run `cmake ../CMakeLists.txt` to make the makefile
+* run `make` to generate the binaries (PicoGFX.elf,PicoGFX.bin,PicoGFX.uf2)
+* finally upload the binary using `picotool load PicoGFX.uf2 -F`
