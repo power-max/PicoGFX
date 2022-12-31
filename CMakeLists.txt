@@ -34,8 +34,8 @@ pico_set_program_name(${PROJECT_NAME} "PicoGFX")
 pico_set_program_version(${PROJECT_NAME} "0.1.0")
 
 # disable UART stdio output, enable USB stdio output
-pico_enable_stdio_uart(${PROJECT_NAME} 0)
-pico_enable_stdio_usb(${PROJECT_NAME} 1)
+pico_enable_stdio_uart(${PROJECT_NAME} 1)
+pico_enable_stdio_usb(${PROJECT_NAME} 0)
 
 # Add the standard library to the build
 target_link_libraries(${PROJECT_NAME} pico_stdlib)

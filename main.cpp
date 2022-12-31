@@ -20,6 +20,8 @@ static inline T max(T a, T b) {
     return (a>b) ? a : b;
 }
 
+
+
 long random(long howbig)
 {
   if (howbig == 0) {
